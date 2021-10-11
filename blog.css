@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(Neutrino-2-Cell.jpg);
+  background-size: cover;
+  background-repeat: none;
+  color: white;
+}
+body a {
+  color: #fff;
+}
+.header {
+  font-size: 30px;
+  color: #fff;
+}
+
+.background-container {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 2%;
+  padding: 1%;
+}
+.navbar-inverse {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.headline {
+  margin: 4%;
+  text-align: center;
+  font-size: 25px;
+}
+.grid-container {
+  display: grid;
+  margin: 0 10% 0 22%;
+
+  padding: 0px;
+  grid-gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.article > img {
+  border-radius: 20px;
+  height: 200px;
+  width: 250px;
+}
+.text {
+  margin-top: 10px;
+  padding-bottom: 2px;
+}
+.list {
+  font-size: 20px;
+}
+.list:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.btn {
+  color: #000;
+  background-color: aliceblue;
+  border: 1px;
+  outline: none;
+  border-radius: 4px;
+  padding: 3%;
+  margin-top: 1%;
+  /* text-align: start; */
+}
+.btn:hover {
+  background-color: wheat;
+}
+.btn:focus {
+  outline: 0 !important;
+}
+.contact {
+  text-align: center;
+  padding: 5% 5% 0 5%;
+}
+.link-item {
+  margin: 1%;
+  padding: 2px;
+  font-size: 35px;
+}
+.contact a:hover {
+  text-decoration: none;
+}
+#footerpara {
+  /* padding: 4px; */
+  color: rgb(105, 103, 103);
+}
+@media screen and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, 2fr);
+    grid-template-columns: none;
+    margin: 50px;
+    text-align: center;
+  }
+  .article img {
+    width: 200px;
+    height: 150px;
+  }
+  .headline {
+    font-size: 20px;
+    margin-top: 6%;
+  }
+  body {
+    background-image: url(phonebackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 320px) {
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, 2fr);
+    grid-template-columns: none;
+    margin: 50px;
+  }
+}
